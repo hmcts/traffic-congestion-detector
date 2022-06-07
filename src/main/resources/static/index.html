@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HoSE Hackathon June 2022</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            main {
+                width:800px;
+                margin: 0 auto;
+            }
+            figcaption {
+                font-size: 12px;
+            }
+        </style>
+    </head>
+<body>
+    <main>
+        <h1>Traffic congestion detector</h1>
+        <figure>
+            <img src="anpr-drone.jpg" style="width: 250px;"/>
+            <figcaption>Photo credit: https://www.sudinfo.be/</figcaption>
+        </figure>
+
+        <p>It is the year 2040 the number of cars on the road has reached almost unsustainable levels.<br/>
+            The government establishes a new Traffic Officer department, and you are members of the advanced R&D division.</p>
+        <p>Our division is researching the use of drone beacons with Automated Number Plate Recognition (ANPR).<br/>
+            The drones can rest on platforms along roads and motorways and can be relocated in a matter of minutes.</p>
+        <h2>Your tasks</h2>
+        <h3>Coding challenge</h3>
+        <p>Develop an API that calculates the average car speed in a particular area.<br/>
+            If the average speed falls below 10mph, a congestion alert is raised.</p>
+        <p>Some cars will not get past the second ANPR collector, ensure that does not impact the average speed calculation or introduce memory leaks.</p>
+        <h3>Operations/Networking challenge</h3>
+        <p>Develop a Dockerimage for your application. Build, deploy to docker hub so that it runs on the pi cluster.</p>
+        <h2>Stretch goal</h2>
+        <p>If the mobile beacon is re-located, the distance between the ANPR systems changes,
+            recalculate the distance and calculate the average speed appropriately from then on.</p>
+        <h3>Hints</h3>
+        <p>Speed is calculated as distance/time. Distance could be miles/km/m;</p>
+        <p>Your software will be deployed in a cluster, decide early your state strategy (Stateless, stateful services);</p>
+        <p>(If applicable) Decide which part of the software delivery life cycle is going to be responsible for code compilation;</p>
+        <p>Raspberry pis have a specific architecture. It might influence compilation strategy.</p>
+        <h3>Credits</h3>
+        <ul>
+            <li><a href="https://aws.amazon.com/corretto/">Amazon Corretto</a></li>
+            <li><a href="https://spring.io/">Spring framework</a></li>
+            <li><a href="https://www.docker.com/">Docker</a></li>
+            <li><a href="https://h2database.com/html/main.html">H2 Database Engine</a></li>
+            <li><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></li>
+        </ul>
+    </main>
+</body>
+</html>
