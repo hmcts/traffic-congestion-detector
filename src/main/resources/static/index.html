@@ -28,19 +28,35 @@
             The drones can rest on platforms along roads and motorways and can be relocated in a matter of minutes.</p>
         <h2>Your tasks</h2>
         <h3>Coding challenge</h3>
-        <p>Develop an API that calculates the average car speed in a particular area.<br/>
+        <p>Develop an API that calculates the average car speed in a particular area.
             If the average speed falls below 10mph, a congestion alert is raised.</p>
         <p>Some cars will not get past the second ANPR collector, ensure that does not impact the average speed calculation or introduce memory leaks.</p>
+        <h3>Technical notes</h3>
+        <p>There are several ways of tackling the problems in this challenge. Are you going to learn and build your own algorithms
+            or leverage libraries? Here we include some suggestions/hints should you decide either.</p>
+        <ul>
+            <li>Earth is not a perfect sphere, rather an ellipsoid. Should your distance calculations take that into account?</li>
+            <li>There are several libraries for all sorts of calculations, when does it become worth using them?</li>
+            <li>Speed is calculated as distance/time</li>
+            <li>1 mile =  1.609344 km</li>
+        </ul>
         <h3>Operations/Networking challenge</h3>
         <p>Develop a Dockerimage for your application. Build, deploy to docker hub so that it runs on the pi cluster.</p>
-        <h2>Stretch goal</h2>
+        <h3>Stretch goal</h3>
         <p>If the mobile beacon is re-located, the distance between the ANPR systems changes,
             recalculate the distance and calculate the average speed appropriately from then on.</p>
         <h3>Hints</h3>
-        <p>Speed is calculated as distance/time. Distance could be miles/km/m;</p>
         <p>Your software will be deployed in a cluster, decide early your state strategy (Stateless, stateful services);</p>
         <p>(If applicable) Decide which part of the software delivery life cycle is going to be responsible for code compilation;</p>
         <p>Raspberry pis have a specific architecture. It might influence compilation strategy.</p>
+        <h3>Useful links:</h3>
+        <ul>
+            <li>https://en.wikipedia.org/wiki/Haversine_formula</li>
+            <li>https://www.baeldung.com/java-distance-between-two-points</li>
+            <li>https://github.com/grumlimited/geocalc</li>
+            <li>https://github.com/kloverde/java-GeographicCoordinate</li>
+            <li>https://github.com/JavadocMD/simplelatlng</li>
+        </ul>
         <h3>Credits</h3>
         <ul>
             <li><a href="https://aws.amazon.com/corretto/">Amazon Corretto</a></li>
